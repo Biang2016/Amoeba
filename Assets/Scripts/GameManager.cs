@@ -66,14 +66,14 @@ public class GameManager : MonoSingleton<GameManager>
     {
         GameState = GameStates.GameOver;
         GameOverCanvas.SetActive(true);
-        if (PlayerAWin)
-        {
-            GameOverText.text = "Player A Wins!";
-        }
-        else
-        {
-            GameOverText.text = "Player B Wins!";
-        }
+        //if (PlayerAWin)
+        //{
+        //    GameOverText.text = "Player A Wins!";
+        //}
+        //else
+        //{
+        //    GameOverText.text = "Player B Wins!";
+        //}
     }
 
     public void NewGame()
@@ -89,7 +89,7 @@ public class GameManager : MonoSingleton<GameManager>
 
     public void ClearGame()
     {
-        GamePlayManager.Instance.ResetGameBoard();
+        ChessBoard.Instance.ResetGameBoard();
     }
 
     public void Replay()

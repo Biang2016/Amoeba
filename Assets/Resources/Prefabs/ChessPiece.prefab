@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 433731053203026887}
   - component: {fileID: 487794007110492249}
   m_Layer: 0
-  m_Name: Chess_Red
+  m_Name: ChessPiece
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,10 +47,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1515988313590648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e873052b95b004158a232eccbee05c28, type: 3}
+  m_Script: {fileID: 11500000, guid: 4cb9ccd793347fc4e9d3f2db8ac05024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Pos: 
+  Image: {fileID: 487794007110492249}
 --- !u!222 &433731053203026887
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -72,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.12657726, b: 0, a: 1}
+  m_Color: {r: 0, g: 0.61128855, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
