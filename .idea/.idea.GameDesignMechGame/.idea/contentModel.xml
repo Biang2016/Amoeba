@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_GameDesignMechGame.1949486777.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Basic" t="Include">
+            <e p="AudioManager.cs" t="Include" />
+            <e p="GameObjectPool.cs" t="Include" />
+            <e p="GameObjectPoolManager.cs" t="Include" />
+            <e p="GamePlayManager.cs" t="Include" />
+            <e p="MonoSingleton.cs" t="Include" />
+            <e p="PoolObject.cs" t="Include" />
+            <e p="PrefabManager.cs" t="Include" />
+          </e>
+          <e p="ChessBoard" t="Include">
+            <e p="Chess.cs" t="Include" />
+            <e p="ChessBoard.cs" t="Include" />
+            <e p="ChessBoardLine.cs" t="Include" />
+          </e>
+          <e p="ColorChanger.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="MouseHoverBox.cs" t="Include" />
+        </e>
+      </e>
+      <e p="GameDesignMechGame.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
