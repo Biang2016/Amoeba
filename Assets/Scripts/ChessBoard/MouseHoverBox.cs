@@ -6,7 +6,7 @@ public class MouseHoverBox : PoolObject
 {
     void Start()
     {
-        ((RectTransform) transform).sizeDelta = new Vector2(ChessBoard.Instance.CellSize * 1.5f, ChessBoard.Instance.CellSize * 1.5f);
+        ((RectTransform) transform).sizeDelta = new Vector2(GameManager.Instance.CellSize * 1.5f, GameManager.Instance.CellSize * 1.5f);
     }
 
     public Image[] Images;

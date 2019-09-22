@@ -19,6 +19,13 @@ public class Player : PoolObject
         MoveTimes_Text.text = "";
         PickOtherTimes_Text.text = "";
         PlayerIndex = playerIndex;
+
+        IsMyTurn = false;
+        PlaceLeftTimes = 0;
+        MoveTimes = 0;
+        PickOtherTimes = 0;
+        TotalPieces = 0;
+        TotalPickup = 0;
     }
 
     public int PlayerIndex;
@@ -37,13 +44,13 @@ public class Player : PoolObject
 
     public void OnDiceButtonClick()
     {
-        if ((GamePlayManager.Instance.CurrentPlayer.PlayerIndex == GamePlayManager.Instance.PlayerNumber - 1 && PlayerIndex == 0)
-            || GamePlayManager.Instance.CurrentPlayer.PlayerIndex == PlayerIndex - 1)
+        if ((GameManager.Instance.CurrentPlayer.PlayerIndex == GameManager.Instance.PlayerNumber - 1 && PlayerIndex == 0)
+            || GameManager.Instance.CurrentPlayer.PlayerIndex == PlayerIndex - 1)
         {
-            GamePlayManager.Instance.Turn++;
+            GameManager.Instance.Turn++;
             return;
         }
-        else if (GamePlayManager.Instance.CurrentPlayer == this)
+        else if (GameManager.Instance.CurrentPlayer == this)
         {
             PlaceLeftTimes = Random.Range(0, 5);
             MoveTimes = Random.Range(0, 5);
@@ -72,7 +79,7 @@ public class Player : PoolObject
         set
         {
             moveTimes = value;
-            MoveTimes_Text.text = moveTimes.ToString();
+            //MoveTimes_Text.text = moveTimes.ToString();
         }
     }
 
@@ -85,6 +92,34 @@ public class Player : PoolObject
         {
             pickOtherTimes = value;
             PickOtherTimes_Text.text = pickOtherTimes.ToString();
+        }
+    }
+
+    [SerializeField] private Text TotalPiecesText;
+
+    private int totalPieces;
+
+    public int TotalPieces
+    {
+        get { return totalPieces; }
+        set
+        {
+            totalPieces = value;
+            TotalPiecesText.text = totalPieces.ToString();
+        }
+    }
+
+    [SerializeField] private Text TotalPickupText;
+
+    private int totalPickup;
+
+    public int TotalPickup
+    {
+        get { return totalPickup; }
+        set
+        {
+            totalPickup = value;
+            TotalPickupText.text = totalPickup.ToString();
         }
     }
 }
